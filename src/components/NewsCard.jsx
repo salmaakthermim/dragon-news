@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { AiOutlineEye, AiOutlineShareAlt } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
     // const {news} = props || {};
@@ -31,8 +32,9 @@ const NewsCard = ({ news }) => {
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">{news.title}</h2>
         <p className="text-gray-600 text-sm mt-2">
-          {news.details.substring(0, 100)}...
-          <span className="text-blue-500 font-semibold"> Read More</span>
+          {news.details.substring(0, 100)}... 
+          <br />
+          <Link to={`/news/${news._id}`} className="text-blue-500 font-semibold"> Read More</Link>
         </p>
       </div>
 
