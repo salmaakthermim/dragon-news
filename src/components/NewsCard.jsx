@@ -26,7 +26,7 @@ const NewsCard = ({ news }) => {
       <img
         src={news.image_url}
         alt="Thumbnail"
-        className="w-full h-48 object-cover"
+        className="w-full  rounded-lg mb-4 object-cover"
       />
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">{news.title}</h2>

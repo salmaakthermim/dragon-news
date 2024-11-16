@@ -13,7 +13,7 @@ const HomeLayout = () => {
         <div className='font-poppins'>
             <header>
                 <Header></Header>
-                <section>
+                <section className='w-11/12 mx-auto'> 
                     <LatestNews></LatestNews>
                 </section>
 
